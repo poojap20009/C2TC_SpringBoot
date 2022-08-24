@@ -3,13 +3,21 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-  <bean id = "s" class="com.cg.College.Student">
-  <constructor-arg name="name" value="Pooja"></constructor-arg>
-  <constructor-arg name="id" value="101"/>
+  
+  
+  <bean id = "MathChitReference" class="com.cg.Cheat.MathChit"/>
+  
+  <bean id = "s2" class="com.cg.Cheat.Student">
+  <property name="m" ref = "MathChitReference">
+  
+  </property>
   </bean>
   
-  <bean id = "s1" class="com.cg.College.Student">
-  <constructor-arg name="name" value="Jungkook"/>
-  <constructor-arg name="id" value="102"/>
+  <bean id = "s3" class="com.cg.Cheat.AnotherStudent">
+  <property name="m" ref = "MathChitReference">
+  
+  </property>
   </bean>
-  </beans>      
+  
+  </beans>  
+      

@@ -1,9 +1,8 @@
 package com.cg.Cheat;
 
-public class Student {
-	
+public class AnotherStudent {
 	private MathChit m;
-	
+
 	
 	public MathChit getM() {
 		return m;
@@ -15,8 +14,8 @@ public class Student {
 	}
 
 
-	void cheating() {
+	void startCheating() {
 		m.mathChit();
+		
 	}
-
 }
